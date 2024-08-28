@@ -68,8 +68,7 @@ Complete the exercise in the space below:
 function generateEmail(name, domain) {
    // console.log(`${name}@${domain}`);
     // the 'return' method is what I was taught
-   return name + '@' + domain
-
+   return name + '@' + domain;
 }
 //call or invoke function
 
@@ -111,3 +110,43 @@ return Math.max(num1,num2,num3);
 
 
 console.log('Exercise 6 Result:', maxOfThree(5, 10, 8));
+
+
+/*
+Exercise 7: calculateTip()
+
+Create a function called calculateTip. It should take two arguments: 
+the bill amount and the tip percentage (as a whole number). 
+The function should return the amount of the tip.
+
+Example: calculateTip(50, 20) should return 10.
+
+Complete the exercise in the space below:
+*/
+function calculateTip(billAmount, tipPercentage) {
+return billAmount * tipPercentage/100;
+}
+
+
+console.log('Exercise 7 Result:', calculateTip(50, 10));
+
+/*
+Exercise 8: convertTemperature()
+
+Write a function named convertTemperature.
+It takes two arguments: a temperature and a string representing the
+scale ('C' for Celsius, 'F' for Fahrenheit).
+Convert the temperature to the other scale.
+
+Example: convertTemperature(32, 'C') should return 89.6 (Fahrenheit).
+Example: convertTemperature(32, 'F') should return 0 (Celsius).
+
+Complete the exercise in the space below:
+*/
+function convertTemperature(temperature, string) {
+
+}
+//(32°F − 32) × 5/9 = 0°C
+
+
+//console.log('Exercise 8 Result:', convertTemperature(32, "C"));
