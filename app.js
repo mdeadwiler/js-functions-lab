@@ -143,10 +143,18 @@ Example: convertTemperature(32, 'F') should return 0 (Celsius).
 
 Complete the exercise in the space below:
 */
-function convertTemperature(temperature, string) {
-
+function convertTemperature(temperature, conversion) {
+let celsius = (temperature - 32) * (5/9);
+let fahrenheit = temperature * (9/5) + 32;
+if (conversion === "C") {
+    return fahrenheit + "Fahrenheit" ;
+} else if (conversion === "F") {
+        return celsius + "Celsius";
+    }
 }
 //(32°F − 32) × 5/9 = 0°C
 
 
-//console.log('Exercise 8 Result:', convertTemperature(32, "C"));
+
+
+console.log('Exercise 8 Result:', convertTemperature(32, "C"));
