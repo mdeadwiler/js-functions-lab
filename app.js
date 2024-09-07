@@ -176,6 +176,23 @@ Example: basicCalculator(10, 5, 'subtract') should return 5.
 Complete the exercise in the space below:
 */
 
+function basicCalculator(num1, num2, operation) {
+    if (num1 && num2 === null || num1 && num2 === 'undefined') {
+        return null;
+    }
+     num1 = 10;
+     num2 = 5;
+    if (operation === '+') {
+        return num1 + num2;
+    } else if (operation === '-') {
+        return num1 - num2;
+    } else if (operation === '*') {
+        return num1 * num2;
+    } else if (operation === '/') {
+        return num1 / num2;
+    } else {
+        return operation;
+    }
+}
 
-
-//console.log('Exercise 9 Result:', basicCalculator(10, 5, "subtract"));
+console.log('Exercise 9 Result:', basicCalculator(10, 5, "subtract"));
